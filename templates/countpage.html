@@ -1,0 +1,18 @@
+<h1>You entered {{kitna}} words. This is the final count; take it or leave it. </h1>
+<br><br>
+<center> <h1> -.- </h1></center>
+<h1>The Shit that you entered - </h1>
+{{sabkuch}}
+<br>
+<br>
+<br>
+<h1>Dictionary of words used - </h1>
+
+{% for item,vitem in sortedwords %}
+{{item}} &emsp;-&emsp; {{vitem}} times <br>
+{% endfor %}
+
+<!-- {{sortedwords}} -->
+<br>
+<h1>Unordered List</h1>
+{{dictionary}} 
