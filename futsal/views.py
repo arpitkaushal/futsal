@@ -22,6 +22,8 @@ def countpage(request):
     return render(request, 'countpage.html',{'sabkuch':sabkuch, 'kitna': len(kitna),'sortedwords':sortedwords, 'dictionary':kitna_dic.items()})
 
 #just messing with git
+def notvalid(request):
+    return HttpResponse("<h1>You shouldn't really be here.</h1>")
 
 def homepage(request):
     return render(request,'homepage.html')
